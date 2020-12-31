@@ -55,8 +55,6 @@ O valor final deve estar em float ou int;
 - Este projeto foi desenvolvido em livestream, então você pode acompanhar o replay ou o resultado final diretamente neste link: [http://https://www.youtube.com/watch?v=A9TBWOLxI1M](http://https://www.youtube.com/watch?v=A9TBWOLxI1M)
 
 
-![](https://img.shields.io/github/stars/pandao/editor.md.svg) ![](https://img.shields.io/github/forks/pandao/editor.md.svg) ![](https://img.shields.io/github/tag/pandao/editor.md.svg) ![](https://img.shields.io/github/release/pandao/editor.md.svg) ![](https://img.shields.io/github/issues/pandao/editor.md.svg) ![](https://img.shields.io/bower/v/editor.md.svg)
-
 
 **Table of Contents**
 
