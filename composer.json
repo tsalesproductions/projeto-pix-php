@@ -1,0 +1,14 @@
+{
+    "name": "thiago/pagamento-com-pix",
+    "description": "Efetuar pagamentos com pix via qrcode",
+    "authors": [
+        {
+            "name": "tsalesproductions",
+            "email": "thiago_salests@hotmail.com"
+        }
+    ],
+    "require": {
+        "endroid/qr-code": "^3.9",
+        "jbroadway/urlify": "^1.2"
+    }
+}

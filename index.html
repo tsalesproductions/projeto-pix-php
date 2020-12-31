@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        *{margin:0; padding: 0;}
+
+        body{font-family: 'Montserrat', sans-serif;}
+
+        main{
+            margin-top: 50px
+        }
+
+        main .prateleira_titulo{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        main .container{
+            max-width: 1440px;
+            margin: 0 auto;
+
+            display: grid;
+            
+            grid-gap: 20px;
+        }
+
+        @media(min-width:768px){
+            main .container{
+                grid-template-columns: repeat(4, 1fr);  
+           } 
+        }
+
+        @media(max-width:768px){
+            main .container{
+                grid-template-columns: repeat(2, 1fr);
+           } 
+        }
+
+        main .item{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 10px;
+            place-items: center;
+            text-align: center;
+        }
+
+        main .item img{
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            object-position: left;
+        }
+
+        main .item > p{
+            display: -webkit-box;
+            -webkit-line-clamp: 7;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            min-height: 140px !important;
+            margin-bottom: 0px;
+            line-height: 20px;
+        }
+
+        main .item iframe{
+            border: none;
+            width: 240px;
+            height: 240px;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1 class="prateleira_titulo">CAMPANHAS</h1>
+        <div class="container">
+            <div class="item">
+                <img src="assets/uploads/pantanal.jpg"/>
+                <h4>Ajude a combater o incêndio no pantanal</h4>
+                <p>Entenda como as queimadas no Pantanal não são fenômenos naturais e tem origem criminosa. Nós te mostramos o que você pode fazer para ajudar agora. Veja 7 formas de agir. Doações a partir de R$35. Ajude a Salvar o Planeta. Junte-se a Nós. Faça a Diferença!</p>
+                <h2>R$ 2,00</h2>
+                <iframe src="components/qrCode.php?valor=2"></iframe>
+            </div>
+            <div class="item">
+                <img src="assets/uploads/animais.png"/>
+                <h4>Ajude a salvar animais de rua</h4>
+                <p>Ajude o Recanto dos Anjos-SP a salvar animais que estão morando na rua</p>
+                <h2>R$ 5</h2>
+                <iframe src="components/qrCode.php?valor=5"></iframe>
+            </div>
+            <div class="item">
+                <img src="assets/uploads/moradores-de-rua.jpg"/>
+                <h4>Ajude a distribuir alimentos para moradores de rua</h4>
+                <p>Faça sua doação para ajudar moradores de rua necessitados.</p>
+                <h2>R$ 12,00</h2>
+                <iframe src="components/qrCode.php?valor=12"></iframe>
+            </div>
+            <div class="item">
+                <img src="assets/uploads/orfanato.jpg"/>
+                <h4>Doe para orfanatos</h4>
+                <p>Solidariedade para o Lar Batista é compreender que Deus se faz presente na relação de interdependência que envolve seus colaboradores, crianças e adolescentes.</p>
+                <h2>R$ 10,00</h2>
+                <iframe src="components/qrCode.php?valor=10"></iframe>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
